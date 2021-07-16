@@ -1,0 +1,18 @@
+<svg width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<defs xmlns="http://www.w3.org/2000/svg">
+	        <style>
+	            g {
+	                display: none;
+	            }
+	            g:target, g:target * {
+	                display: inline;
+	            }
+	        </style>
+	    </defs>
+<g id="orange">
+	<path d="M1 1.306l8 8 8-8" stroke="#FFA62B" stroke-width="2"/>
+</g>
+<g id="black">
+	<path d="M1 1.306l8 8 8-8" stroke="#161616" stroke-width="2"/>
+</g>
+</svg>
