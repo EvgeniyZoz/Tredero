@@ -23,6 +23,8 @@ jQuery(document).ready(function () {
   
   AOS.init();
   
+  $("video").prop("volume", 0.3).click(function(){this[this.paused?"play":"pause"]()});
+
   //     // ========================================
   //     // HEADER 
   //     // --------------------
@@ -131,7 +133,7 @@ jQuery(document).ready(function () {
 
   $(".footer__h4").first().click();
 
-  $(".mobile__menu_arrow").click(function (e) {
+  $(".mobile__menu_clickable, .mobile__menu_clickable a").click(function (e) {
     e.preventDefault();
     var li = $(this).parents('.mobile__menu_li');
     if (li.hasClass('active')) {
