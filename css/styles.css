@@ -662,6 +662,10 @@ body .mb-160 {
   text-align: center;
   max-width: inherit;
 }
+  .bl_video .bl_video__video video{
+    max-width: 570px;
+    margin:0 auto;
+  }
 
 /*.bl_investing .bl_investing__text{
 	margin-right: 253px;
