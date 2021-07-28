@@ -431,29 +431,29 @@ body .mb-160 {
 .bl_work_money__top .anim-item-1 .img-anim {
   -webkit-animation-name: iconAnimation;
   animation-name: iconAnimation;
-  -webkit-animation-duration: 1.6s;
-  animation-duration: 1.6s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
 }
 
 .bl_work_money__top .anim-item-2 .img-anim {
   -webkit-animation-name: iconAnimation2;
   animation-name: iconAnimation2;
-  -webkit-animation-duration: 1.7s;
-  animation-duration: 1.7s;
+  -webkit-animation-duration: 2.7s;
+  animation-duration: 2.7s;
 }
 
 .bl_work_money__top .anim-item-3 .img-anim {
   -webkit-animation-name: iconAnimation;
   animation-name: iconAnimation;
-  -webkit-animation-duration: 1.6s;
-  animation-duration: 1.6s;
+  -webkit-animation-duration: 2.6s;
+  animation-duration: 2.6s;
 }
 
 .bl_work_money__top .anim-item-4 .img-anim {
   -webkit-animation-name: iconAnimation2;
   animation-name: iconAnimation2;
-  -webkit-animation-duration: 1.8s;
-  animation-duration: 1.8s;
+  -webkit-animation-duration: 2.8s;
+  animation-duration: 2.8s;
 }
 
 .anim-item-1 .img-anim-0 img {
@@ -662,10 +662,6 @@ body .mb-160 {
   text-align: center;
   max-width: inherit;
 }
-  .bl_video .bl_video__video video{
-    max-width: 570px;
-    margin:0 auto;
-  }
 
 /*.bl_investing .bl_investing__text{
 	margin-right: 253px;
@@ -2878,6 +2874,18 @@ span.--black {
     margin-bottom: 15px;
   }
 
+  .main__ill__col.--xxs__order_1 {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  .main__ill__col.--xxs__order_2 {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    order: 2;
+  }
+
   .--btn__start {
     min-width: 290px;
     padding: 13px 20px;
@@ -2954,6 +2962,17 @@ span.--black {
 
   .trader__icos {
     margin-bottom: 10px;
+  }
+
+  .main__ill__row--trader .--xs__order_2,
+  .main__ill__row--trader .--xs__order_3,
+  .main__ill__row--trader .--xs__order_4,
+  .main__ill__row--trader .--xs__order_5 {
+    min-width: -webkit-calc(100% - 30px);
+    min-width: calc(100% - 30px);
+    max-width: -webkit-calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    margin-bottom: 30px;
   }
 
   .main__ill__row--trader.--blur__bg,
@@ -3051,28 +3070,7 @@ span.--black {
     display: none;
   }
 }
-@media screen and (max-width:620px){
-    .main__ill__row--trader .--xs__order_2,
-    .main__ill__row--trader .--xs__order_3,
-    .main__ill__row--trader .--xs__order_4,
-    .main__ill__row--trader .--xs__order_5 {
-      min-width: -webkit-calc(100% - 30px);
-      min-width: calc(100% - 30px);
-      max-width: -webkit-calc(100% - 30px);
-      max-width: calc(100% - 30px);
-      margin-bottom: 30px;
-    }
-    .main__ill__col.--xxs__order_2 {
-      -webkit-box-ordinal-group: 3;
-      -webkit-order: 2;
-      order: 2;
-    }
-    .main__ill__col.--xxs__order_1 {
-      -webkit-box-ordinal-group: 2;
-      -webkit-order: 1;
-      order: 1;
-    }
-}
+
 @media screen and (max-width: 480px) {
   .anim-item-1 .img-anim-2 img {
     bottom: 146px;
