@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- ======================================== -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Signin</title>
+
+<!-- Fonts -->
+<!--<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet">-->
+<!-- End Fonts -->
+
+<!-- Links -->
+<!-- <link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/slick.css"> -->
+
+
+<link rel="preload" as="style" href="css/other.css" onload="this.rel='stylesheet'">
+<link rel="preload" as="style" href="css/style-old.css" onload="this.rel='stylesheet'">
+<link rel="preload" as="style" href="css/intlTelInput.min.css" onload="this.rel='stylesheet'">
+<link rel="preload" as="style" href="css/styles.css" onload="this.rel='stylesheet'">
+<link rel="icon" href="Favicon_Color.svg">
+
+<link rel="stylesheet" href="css/style-old.css">
+<link rel="stylesheet" href="css/styles.css">
+<!-- End Links -->
+<!-- ======================================== -->
+</head>
+
+<body>
+   <div class="main_wrapper">
+      <!-- ======================================== -->
+<!-- HEADER -->
+<header class="main_header">
+   <!-- ==================== -->
+   <!-- Header desktop -->
+   <div class="header" data-aos="fade-in"
+                     data-aos-delay="200"
+                      data-aos-duration="600"
+                      data-aos-easing="ease-in-out"
+                      data-aos-once="true">
+      <div class="container">
+         <div class="header__content">
+            <div class="header__logo">
+               <a href="index.html">
+                  <img src="./img/new/logo.svg" alt="logo">
+               </a>
+               <a href="index.html">
+                  <img src="./img/logo_mobile.svg" alt="logo_mobile">
+               </a>
+            </div>
+            <div class="header_menu">
+               <ul>
+                  <li>
+                     <a href="#products" class="menu__sub_link">
+                        Trading Products
+                     </a>
+                     <ul class="menu__sub">
+                        <li class="menu__sub_li">
+                           <a href="forex.html" class="mobile__menu__sub_a">
+                              <span class="menu__sub_icos">
+                                 <img src="img/new/menu__sub_forex.svg" class="menu__sub_icos_img" alt="">
+                              </span>
+                              <span>Forex</span></a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="Stocks.html" class="mobile__menu__sub_a">
+                              <span class="menu__sub_icos">
+                                 <img src="img/new/menu__sub_stocks.svg" class="menu__sub_icos_img" alt="">
+                              </span>
+                              <span>Stocks</span></a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="indices.html" class="mobile__menu__sub_a">
+                              <span class="menu__sub_icos">
+                                 <img src="img/new/menu__sub_indices.svg" class="menu__sub_icos_img" alt="">
+                              </span>
+                              <span>Indices</span></a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="TradingProducts__Metal.html" class="mobile__menu__sub_a">
+                              <span class="menu__sub_icos">
+                                 <img src="img/new/menu__sub_metals.svg" class="menu__sub_icos_img" alt="">
+                              </span>
+                              <span>Metals</span></a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="TradingProducts__Energies.html" class="mobile__menu__sub_a">
+                              <span class="menu__sub_icos">
+                                 <img src="img/new/menu__sub_energies.svg" class="menu__sub_icos_img" alt="">
+                              </span>
+                              <span>Energies</span></a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="commodities.html" class="mobile__menu__sub_a">
+                              <span class="menu__sub_icos">
+                                 <img src="img/new/menu__sub_commodities.svg" class="menu__sub_icos_img" alt="">
+                              </span>
+                              <span>Soft Commodities</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#platforms" class="menu__sub_link">
+                        Platforms
+                     </a>
+                     <ul class="menu__sub" >
+                     	<li class="menu__sub_li">
+                           <a href="MetaTrade4.html" class="mobile__menu__sub_a">
+                              MetaTrader 4</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="MetaTrade5.html" class="mobile__menu__sub_a">
+                              MetaTrader 5</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="BrandedTrader.html" class="mobile__menu__sub_a">
+                              Tredero Trader</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="MetaTrade4.html" class="mobile__menu__sub_a">
+                               MT4 Android</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="BrandedTrader.html" class="mobile__menu__sub_a">
+                              Tredero App</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="MetaTrade5.html" class="mobile__menu__sub_a">
+                              MT5 Android</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="MetaTrade5.html" class="mobile__menu__sub_a">
+                              MT5 IOS</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#company">
+                        Company
+                     </a>
+                     <ul class="menu__sub" >
+                     	<li class="menu__sub_li">
+                           <a href="aboutUs.html" class="mobile__menu__sub_a">
+                              About Us</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              FAQ</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Help Center</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Careers</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#tools">
+                        Trading Tools
+                     </a>
+                     <ul class="menu__sub" >
+                     	<li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Economic Calendar</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Trading Calculator</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Trading Research</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Tredero Signals</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              TipRanks</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#Education"  class="menu__sub_link">
+                        Education
+                     </a>
+                     <ul class="menu__sub" >
+                     	<li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Market News</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Market Review</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Video Tutorials</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Webinars</a>
+                        </li>
+                        <li class="menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Blog</a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="header__btns">
+	            <a href="comingsoon.html" class="btn__outline">
+	               Login
+	            </a>
+	            <a href="comingsoon.html" class="btn_orange ml__25">
+	               Open Free Account
+	            </a>
+            </div>
+            <div class="header__burger">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- End Header desktop -->
+   <!-- ==================== -->
+   <!-- Header mobile -->
+
+   <div class="header__mobile">
+      <div class="header__mobile__content">
+         <div class="header_menu">
+               <ul>
+                  <li class="mobile__menu_li">
+                     <div class="mobile__menu_div mobile__menu_clickable">
+                           Trading Products
+                        <div class="mobile__menu_arrow"></div>
+                     </div>
+                     <ul class="mobile__menu__sub">
+                        <li class="mobile__menu__sub_li">
+                           <a href="forex.html" class="mobile__menu__sub_a">
+                              <span class="menu__sub_icos">
+                                 <img src="img/new/menu__sub_forex.svg" class="menu__sub_icos_img" alt="">
+                              </span>
+                              <span>Forex</span></a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="Stocks.html" class="mobile__menu__sub_a">
+                              <span class="menu__sub_icos">
+                                 <img src="img/new/menu__sub_stocks.svg" class="menu__sub_icos_img" alt="">
+                              </span>
+                              <span>Stocks</span></a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="indices.html" class="mobile__menu__sub_a">
+                              <span class="menu__sub_icos">
+                                 <img src="img/new/menu__sub_indices.svg" class="menu__sub_icos_img" alt="">
+                              </span>
+                              <span>Indices</span></a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="TradingProducts__Metal.html" class="mobile__menu__sub_a">
+                              <span class="menu__sub_icos">
+                                 <img src="img/new/menu__sub_metals.svg" class="menu__sub_icos_img" alt="">
+                              </span>
+                              <span>Metals</span></a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="TradingProducts__Energies.html" class="mobile__menu__sub_a">
+                              <span class="menu__sub_icos">
+                                 <img src="img/new/menu__sub_energies.svg" class="menu__sub_icos_img" alt="">
+                              </span>
+                              <span>Energies</span></a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="commodities.html" class="mobile__menu__sub_a">
+                              <span class="menu__sub_icos">
+                                 <img src="img/new/menu__sub_commodities.svg" class="menu__sub_icos_img" alt="">
+                              </span>
+                              <span>Soft Commodities</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="mobile__menu_li">
+                     <div class="mobile__menu_div mobile__menu_clickable">
+                           Platforms
+                        <div class="mobile__menu_arrow"></div>
+                     </div>
+                     <ul class="mobile__menu__sub" >
+                        <li class="mobile__menu__sub_li">
+                           <a href="MetaTrade4.html" class="mobile__menu__sub_a">
+                              MetaTrader 4</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="MetaTrade5.html" class="mobile__menu__sub_a">
+                              MetaTrader 5</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="BrandedTrader.html" class="mobile__menu__sub_a">
+                              Tredero Trader</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="MetaTrade4.html" class="mobile__menu__sub_a">
+                              MT4 Android</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="BrandedTrader.html" class="mobile__menu__sub_a">
+                              Tredero App</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="MetaTrade5.html" class="mobile__menu__sub_a">
+                              MT5 Android</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="MetaTrade5.html" class="mobile__menu__sub_a">
+                              MT5 IOS</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="mobile__menu_li">
+                     <div class="mobile__menu_div mobile__menu_clickable">
+                        
+                           Company
+                        
+                        <div class="mobile__menu_arrow"></div>
+                     </div>
+                     <ul class="mobile__menu__sub" >
+                        <li class="mobile__menu__sub_li">
+                           <a href="aboutUs.html" class="mobile__menu__sub_a">
+                              About Us</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              FAQ</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Help Center</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Careers</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="mobile__menu_li">
+                     <div class="mobile__menu_div mobile__menu_clickable">
+                        
+                           Trading Tools
+                        
+                        <div class="mobile__menu_arrow"></div>
+                     </div>
+                     <ul class="mobile__menu__sub" >
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Economic Calendar</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Trading Calculator</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Trading Reasearch</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Trading Signals</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              TipRanks</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="mobile__menu_li">
+                     <div class="mobile__menu_div mobile__menu_clickable">
+                        
+                           Education
+                        
+                        <div class="mobile__menu_arrow"></div>
+                     </div>
+                     <ul class="mobile__menu__sub" >
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Market News</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Market Review</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Video Tutorials</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Webinars</a>
+                        </li>
+                        <li class="mobile__menu__sub_li">
+                           <a href="comingsoon.html" class="mobile__menu__sub_a">
+                              Blog</a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="header__btns">
+	            <a href="comingsoon.html" class="btn__outline">
+	               Login
+	            </a>
+	            <a href="comingsoon.html" class="btn_orange ml__25">
+	               Open Free Account
+	            </a>
+            </div>
+         <!-- <a href="#" class="btn_orange">
+            Open Free Account
+         </a> -->
+      </div>
+   </div>
+
+   <!-- End Header mobile -->
+   <!-- ==================== -->
+</header>
+<!--END HEADER -->
+<!-- ======================================== -->
+      <main>
+         <!-- ======================================== -->
+         <!-- WORK MONEY -->
+         <div class="bl_work_money bl_work_money--reg" id="solution">
+            <div class="container">
+
+               <section class="registration"  data-aos="zoom-in"
+                     data-aos-delay="200"
+                      data-aos-duration="600"
+                      data-aos-easing="ease-in-out"
+                      data-aos-once="true">
+                      <div class="registration__already">Don't have an account? <a href="registration.html" class="--orange">Sign Up</a></div>
+                      
+                  <form action="#" class="form">
+                     <div class="h4 h4--registration --orange">Sign In</div>
+                     <div class="form__group">
+                        <label class="form__label">Email address</label>
+                        <input type="email" class="form__input" placeholder="Enter email address" required="">
+                     </div>
+                     <div class="form__group">
+                        <label class="form__label">Password</label>
+                        <input type="text" class="form__input" placeholder="Enter password" required="">
+                     </div>
+                     <div class="form__group text-right">
+                        <a href="password.html" class="form__a">Forgot your password?</a>
+                     </div>
+                     <input type="submit" value="Sign In" class="btn_orange --btn__form">
+                  </form>
+                  <div class="registration__or"><span class="registration__or__span">Or</span></div>
+                  <a href="#" class="btn__social mb-30">
+                     <span class="btn__social__ico"><img src="img/new/reg__google.svg" alt="">
+                     </span>
+                     Register with Google</a>
+                  <a href="#" class="btn__social mb-30">
+                     <span class="btn__social__ico"><img src="img/new/reg__fb.svg" alt="">
+                     </span>
+                     Register with Facebook</a>
+                  <a href="#" class="btn__social">
+                     <span class="btn__social__ico"><img src="img/new/reg__apple.svg" alt="">
+                     </span>
+                     Register with Apple</a>
+               </section>
+               
+            </div>
+         </div>
+         <!-- END WORK MONEY -->
+        
+      </main>
+      <!-- ======================================== -->
+<!-- FOOTER -->
+<footer class="main_footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__content_logos">
+           <div class="footer_logo">
+             <a href="index.html">
+               <img src="./img/logo.svg" alt="logo_footer">
+             </a>
+             <div class="footer__links">
+             	<div class="footer__soc">
+	              <ul>
+	                <li>
+	                  <a href="#">
+	                    <img src="./img/icons/facebook.svg" alt="facebook">
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#">
+	                    <img src="./img/icons/youtube.svg" alt="youtube">
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#">
+	                    <img src="./img/icons/instagram.svg" alt="instagram">
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#">
+	                    <img src="./img/icons/in.svg" alt="linkdn">
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#">
+	                    <img src="./img/icons/twitter.svg" alt="twitter">
+	                  </a>
+	                </li>
+	              </ul>
+	          </div></div>
+           </div>
+           <div class="footer__contacts">
+              <a href="mailti:support@tredero.com">support@tredero.com</a>
+              <a href="tel:+2481234567">+248 123 45 67</a>
+              <address>
+                5th Floor, The Core, 62 Ebene Cybercity 72201, Mauritius <br>
+				License number: GB20025316 <br>
+				Registration number: 170958 GBC <br>
+				Licensed by: Financial Services Commission - Mauritius
+              </address>
+            </div>
+            <div class="footer__links">
+               <div class="footer__soc">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <img src="./img/icons/facebook.svg" alt="facebook">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="./img/icons/youtube.svg" alt="youtube">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="./img/icons/instagram.svg" alt="instagram">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="./img/icons/in.svg" alt="linkdn">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="./img/icons/twitter.svg" alt="twitter">
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+               <div class="footer__privacy">
+                   <ul>
+                     <li>
+                       <a href="comingsoon.html">
+                         Privacy
+                       </a>
+                     </li>
+                     <li>
+                       <a href="comingsoon.html">
+                         Imprint
+                       </a>
+                     </li>
+                     <li>
+                       <a href="comingsoon.html">
+                         Terms&Conditions
+                       </a>
+                     </li>
+                   </ul>
+                   © TREDERO 2021
+              </div>
+            </div>
+      </div><!-- end footer__content_logos -->
+
+      <div class="footer__col2">
+         <div class="footer__row2">
+         	<div class="footer__content_logos">
+	           <div class="footer_logo">
+	             <a href="index.html">
+	               <img src="./img/logo.svg" alt="logo_footer">
+	               <img src="./img/new/footer__mobile-logo.svg" alt="logo_footer" class="footer__mobile-logo">
+	             </a>
+	           </div>
+	           <div class="footer__contacts">
+	              <a href="mailti:support@tredero.com">support@tredero.com</a>
+	              <a href="tel:+2481234567">+248 123 45 67</a>
+	              <address>
+	                CT House, Office No. 9A, Providence, Mahé, Seychelles
+	              </address>
+	            </div>
+	            <div class="footer__links">
+	             	<div class="footer__soc">
+		              <ul>
+		                <li>
+		                  <a href="#">
+		                    <img src="./img/icons/facebook.svg" alt="facebook">
+		                  </a>
+		                </li>
+		                <li>
+		                  <a href="#">
+		                    <img src="./img/icons/youtube.svg" alt="youtube">
+		                  </a>
+		                </li>
+		                <li>
+		                  <a href="#">
+		                    <img src="./img/icons/instagram.svg" alt="instagram">
+		                  </a>
+		                </li>
+		                <li>
+		                  <a href="#">
+		                    <img src="./img/icons/in.svg" alt="linkdn">
+		                  </a>
+		                </li>
+		                <li>
+		                  <a href="#">
+		                    <img src="./img/icons/twitter.svg" alt="twitter">
+		                  </a>
+		                </li>
+		              </ul>
+		          </div></div>
+	      	</div><!-- end footer__content_logos -->
+            <div class="footer__col footer__col--1">
+               <div class="footer__h4">Trading Products</div>
+               <ul>
+                  <li class="footer__link-li">
+                     <a href="forex.html" class="footer__link-a">Forex</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="Stocks.html" class="footer__link-a">Stocks</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="indices.html" class="footer__link-a">Indices</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="TradingProducts__Metal.html" class="footer__link-a">Metals</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="TradingProducts__Energies.html" class="footer__link-a">Energies</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="commodities.html" class="footer__link-a">Soft Commodities</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="#" class="footer__link-a">Crypto</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__col footer__col--2">
+               <div class="footer__h4">Platforms</div>
+               <ul>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a footer__link-a--strong">Web/PC</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="MetaTrade4.html" class="footer__link-a">MetaTrader 4</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="MetaTrade5.html" class="footer__link-a">MetaTrader 5</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="BrandedTrader.html" class="footer__link-a">Tredero Trader</a>
+                  </li>
+                  <li class="footer__link-li footer__link-li-hide">
+                     <a href="#" class="footer__link-a footer__link-a--strong">Mobile</a>
+                  </li>
+                  <li class="footer__link-li footer__link-li-hide">
+                     <a href="MetaTrade4.html" class="footer__link-a">MT4 Android</a>
+                  </li>
+                  <li class="footer__link-li footer__link-li-hide">
+                     <a href="BrandedTrader.html" class="footer__link-a">Tredero App</a>
+                  </li>
+                  <li class="footer__link-li footer__link-li-hide">
+                     <a href="MetaTrade5.html" class="footer__link-a">MT5 Android</a>
+                  </li>
+                  <li class="footer__link-li footer__link-li-hide">
+                     <a href="MetaTrade5.html" class="footer__link-a">MT5 IOS</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__col footer__col--3 xxs-hide">
+               <div class="footer__h4">&nbsp;</div>
+               <ul>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a footer__link-a--strong">Mobile</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="MetaTrade4.html" class="footer__link-a">MT4 Android</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="BrandedTrader.html" class="footer__link-a">Tredero App</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="MetaTrade5.html" class="footer__link-a">MT5 Android</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="MetaTrade5.html" class="footer__link-a">MT5 IOS</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__col footer__col--4">
+               <div class="footer__h4">Trading Tools</div>
+               <ul>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">Economic Calendar</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">Trading Calculator</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">Trading Research</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">Tredero Signals</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">TipRanks</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__col footer__col--5">
+               <div class="footer__h4">Company</div>
+               <ul>
+                  <li class="footer__link-li">
+                     <a href="aboutUs.html" class="footer__link-a">About Us</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">FAQ</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">Help Center</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">Careers</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__col footer__col--6">
+               <div class="footer__h4">Education</div>
+               <ul>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">Market News</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">Market Review</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">Video Tutorials</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">Webinars</a>
+                  </li>
+                  <li class="footer__link-li">
+                     <a href="comingsoon.html" class="footer__link-a">Blog</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+    </div><!-- end footer__content -->
+  </div><!-- end container -->
+
+</footer>
+<!-- END FOOTER -->
+<!-- ======================================== --> <!-- ======================================== -->
+<!-- JS Script -->
+<!-- <script src="libs/lightbox/js/lightbox-plus-jquery.min.js"></script> -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/lazysizes.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/intlTelInput.min.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/script.js"></script>
+<!-- End JS Script -->
+<!-- ======================================== -->
+   </div>
+</body>
+
+</html>
