@@ -20,7 +20,6 @@
 
 <link rel="preload" as="style" href="css/other.css" onload="this.rel='stylesheet'">
 <link rel="preload" as="style" href="css/style-old.css" onload="this.rel='stylesheet'">
-<link rel="preload" as="style" href="css/intlTelInput.min.css" onload="this.rel='stylesheet'">
 <link rel="preload" as="style" href="css/styles.css" onload="this.rel='stylesheet'">
 <link rel="icon" href="Favicon_Color.svg">
 
@@ -435,32 +434,68 @@
 <!--END HEADER -->
 <!-- ======================================== -->
       <main>
-         <div class="container --first__ill2">
-            <div class="row">
-               <div class="col col__contacts">
-                  <h1 class="mb-25 main__ill_h2">Our Contacts</h1>
+         <div class="container">
+            <div class="contacts__support__row">
+               <div class="main__contacts">
+                  <h1 class="mb-25 main__ill_h2 main__ill_h2--contacts">Our Contacts</h1>
+                  <div class="main__contacts__row">
+                     <a href="mailto:support@tredero.com" class="main__contacts__col">
+                        <span class="main__contacts__h4">
+                           <span class="main__contacts__ico">
+                              <img src="img/new/contacts__mail.svg" alt="" class="main__contacts__ico__img">
+                           </span>
+                           Email</span>
+                        support@tredero.com
+                     </a>
+                     <a href="#" class="main__contacts__col">
+                        <span class="main__contacts__h4">
+                           <span class="main__contacts__ico">
+                              <img src="img/new/contacts__chat.svg" alt="" class="main__contacts__ico__img">
+                           </span>
+                           Live Chat</span>
+                     </a>
+                     <a href="tel:+2484671942" class="main__contacts__col">
+                        <span class="main__contacts__h4">
+                           <span class="main__contacts__ico">
+                              <img src="img/new/contacts__phone.svg" alt="" class="main__contacts__ico__img">
+                           </span>
+                           Phone
+                        </span>
+                        +248 467 1942
+                     </a>
+                     <a href="#" class="col main__contacts__col">
+                        <span class="main__contacts__h4">
+                           <span class="main__contacts__ico">
+                              <img src="img/new/contacts__group.svg" alt="" class="main__contacts__ico__img">
+                           </span>
+                           Request a call</span>
+                     </a>
+                  </div>
                   <div id="map1" class="contacts__map"></div>
                </div>
-               <div class="col col__support" data-aos="zoom-in"
+               <div class="main__support" data-aos="zoom-in"
                   data-aos-delay="200"
                    data-aos-duration="600"
                    data-aos-easing="ease-in-out"
                    data-aos-once="true">
-                  <form action="#" class="form">
-                     <h2 class="mb-25 main__ill_h2">Support</h2>
-                     <div class="form__p">Successful trading requires effective communication which is exactly why we are always available to answer your questions, resolve issues and help you enjoy the tixee trading experience. Contact us 24/5.</div>
-                     <div class="form__group">
-                        <label class="form__label">Full Name</label>
-                        <input type="text" class="form__input" placeholder="Enter email address" required="">
+                   <form action="#" class="form main__support__form">
+                     <h2 class="mb-25 main__ill_h2 --text__center">Support</h2>
+                     <div class="main_support__p">Successful trading requires effective communication which is exactly why we are always available to answer your questions, resolve issues and help you enjoy the tixee trading experience. Contact us 24/5.</div>
+                     <div class="main__support__form__in">
+                        <div class="form__group">
+                           <input type="text" class="form__input form__input--support" placeholder="Full Name" required="">
+                        </div>
+                        <div class="form__group iti__support">
+                           <input type="text" class="form__input form__input--support" id="phone" required="" placeholder="Phone">
+                        </div>
+                        <div class="form__group">
+                           <input type="email" class="form__input form__input--support" placeholder="Email" required="">
+                        </div>
+                        <div class="form__group">
+                           <textarea type="email" class="form__textarea form__textarea--support" placeholder="Enter email address" required=""></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="btn_orange btn_orange--width100">
                      </div>
-                     <div class="form__group">
-                        <label class="form__label">Password</label>
-                        <input type="text" class="form__input" placeholder="Enter password" required="">
-                     </div>
-                     <div class="form__group text-right">
-                        <a href="password.html" class="form__a">Forgot your password?</a>
-                     </div>
-                     <input type="submit" value="Sign In" class="btn_orange --btn__form">
                   </form>
                </div>
             </div>
@@ -767,8 +802,12 @@
 <script src="js/lazysizes.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/intlTelInput.min.js"></script>
-<script src="js/utils.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/script.js"></script>
+
+
+
 <!-- End JS Script -->
 <!-- ======================================== -->
 <script src="https://api-maps.yandex.ru/2.0.31/?load=package.full&lang=ru-RU" type="text/javascript"></script>
@@ -784,7 +823,7 @@
               });
               
          var placemark1 = new ymaps.Placemark([55.734046, 37.588628], {
-                  balloonContent: '1'
+                  balloonContent: 'CT House, Office No. 9A, <br>Providence, Mahé, Seychelles'
               }, {
                   // Опции.
                    // Необходимо указать данный тип макета.
@@ -805,22 +844,15 @@
 .add('typeSelector',  {left:45, bottom:10});  // Типы карт
               
               myMap1.geoObjects.add(placemark1);
-              
-              
-              var myMap2 = new ymaps.Map('map2', {
-                      center: [5.734046, 37.588628],
-                      zoom: 9
-              });
+           
               
               var placemark1 = new ymaps.Placemark([5.734046, 37.588628], {
-                  balloonContent: '2'
+                  balloonContent: '1'
               });
               
-              myMap2.geoObjects.add(placemark1);
-              
+            
               myMap1.behaviors.disable("scrollZoom");
-              myMap2.behaviors.disable("scrollZoom");
-               
+            
           }
           
           ymaps.ready(init);

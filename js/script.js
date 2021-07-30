@@ -473,3 +473,17 @@ $(document).on('mouseleave', '.anim-item', function (event) {
 
 /*-----------------END-ANIM---------------------------*/
 
+$( function() {
+    $( "#slider-range-max" ).slider({
+      range: "max",
+      min: 1,
+      max: 430,
+      value:10,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.value );
+        $( "#amount2" ).html($( "#amount" ).val()*80)
+      }
+    });
+    $( "#amount" ).val( $( "#slider-range-max" ).slider( "value" ) );
+    $( "#amount2" ).html($( "#amount" ).val()*80)
+} );
