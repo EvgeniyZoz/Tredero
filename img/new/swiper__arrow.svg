@@ -1,0 +1,18 @@
+<svg width="24" height="48" viewBox="0 0 24 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<defs xmlns="http://www.w3.org/2000/svg">
+	        <style>
+	            g {
+	                display: none;
+	            }
+	            g:target, g:target * {
+	                display: inline;
+	            }
+	        </style>
+	    </defs>
+<g id="disabled">
+<path d="M1 24L23 2V10.6429L9.64286 24L23 37.3571V46L1 24Z" stroke="#FFA62B"/>
+</g>
+<g id="active">
+<path d="M1 24L23 2V10.6429L9.64286 24L23 37.3571V46L1 24Z" fill="#FFA62B"/>
+</g>
+</svg>
