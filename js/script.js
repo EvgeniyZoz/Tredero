@@ -15,7 +15,7 @@ jQuery(document).ready(function () {
 
   var giftofspeed = document.createElement('link');
   giftofspeed.rel = 'stylesheet';
-  giftofspeed.href = '../css/other.css';
+  giftofspeed.href = 'css/other.css';
   giftofspeed.type = 'text/css';
   var godefer = document.getElementsByTagName('link')[0];
   godefer.parentNode.insertBefore(giftofspeed, godefer);
@@ -283,33 +283,36 @@ jQuery(document).ready(function () {
   });
   
 
-  var swiper1 = new Swiper(".blogSwiper", {
-    lazy: true,
-     slidesPerView: 1,
-    spaceBetween: 30,
-    //autoHeight: true,
-    navigation: {
-      nextEl: ".blog__next",
-      prevEl: ".blog__prev",
-    },
-    breakpoints: {
-      220:{
-        slidesPerView: 1,
-        slidesPerColumn:3,        
-        Autoheight:true
-      },
-      640: {
-        slidesPerView: 2,
-        slidesPerColumn:2,
-      },
-      1198: {
-        slidesPerView: 3,
-      },
-      1799: {
-        slidesPerView: 4
-      },
-    }
+  $('.blogSwiper').each(function(){
+  	var swiper1 = new Swiper(".blogSwiper", {
+	    lazy: true,
+	     slidesPerView: 1,
+	    spaceBetween: 30,
+	    //autoHeight: true,
+	    navigation: {
+	      nextEl: ".blog__next",
+	      prevEl: ".blog__prev",
+	    },
+	    breakpoints: {
+	      220:{
+	        slidesPerView: 1,
+	        slidesPerColumn:3,        
+	        Autoheight:true
+	      },
+	      640: {
+	        slidesPerView: 2,
+	        slidesPerColumn:2,
+	      },
+	      1198: {
+	        slidesPerView: 3,
+	      },
+	      1799: {
+	        slidesPerView: 4
+	      },
+	    }
+	  });
   });
+  
   
   /*tabs*/
   $('.tabs li.active a').each(function(){
